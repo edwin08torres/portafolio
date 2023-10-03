@@ -123,8 +123,8 @@ h6 {
 }
 
 .banner .header .logo h2 {
-    font-family: var(--Titan-one);
-    font-weight: 400;
+    font-family: var(--poppins);
+    font-weight: 700;
     font-size: var(--size-h2);
     letter-spacing: .1rem;
     color: #F1B4BB;
@@ -134,7 +134,8 @@ h6 {
 
 .banner .header .logo p {
     color: #F1B4BB;
-    font-family: var(--Titan-one);
+    font-family: var(--poppins);
+    font-weight: 700;
     letter-spacing: .2rem;
     font-size: 1.2rem;
 }
@@ -197,8 +198,8 @@ h6 {
     font-size: 1.2rem;
     letter-spacing: .1rem;
     /* text-transform: uppercase; */
-    font-weight: 400;
-    font-family: var(--Titan-one);
+    font-weight: 700;
+    font-family: var(--poppins);
 }
 
 .banner {
@@ -312,7 +313,7 @@ h6 {
         flex-direction: row-reverse;
         height: 4rem;
         width: 100%;
-        background-color: transparent;
+        background-color: #132043;
         box-shadow: none;
     }
 
@@ -404,7 +405,7 @@ h6 {
     font-size: var(--size-h1);
     font-weight: 700;
     letter-spacing: .1em;
-    color: #000;
+    color: #ed6071;
     text-transform: uppercase;
 }
 
@@ -460,22 +461,11 @@ h6 {
 
 @media(width >=768px) {
     .habilidades {
-        /* background: radial-gradient(circle at top right,
-                #9d0823 10%,
-                #000000 65%,
-                #000000 55%,
-                #000000 55%,
-                #000000 100%); */
         height: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
-
-    .habilidades .contenedor {
-        background: radial-gradient(circle at right top, #9d0823, #9d0823, #4b0404, #000000);
-        box-shadow: 0px 5px 10px #000000;
     }
 
     .habilidades .title h2 {
@@ -520,7 +510,7 @@ h6 {
 }
 
 .proyectos .title h2 {
-    color: #000;
+    color: #ed6071;
     font-family: var(--poppins);
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -565,6 +555,7 @@ h6 {
     box-shadow: 0px 5px 10px #F1B4BB;
     border-radius: 0px 0px 5px 5px;
 }
+
 .proyectos .container .card .content h2 {
     font-family: var(--Azaret-mono);
     color: #000;
@@ -606,13 +597,17 @@ h6 {
         max-width: 20rem;
     }
 
-    .proyectos .container .card:nth-child(1) .content {
-        background-color: transparent;
-        box-shadow: 0px 5px 10px #000000;
-    }
-
     .proyectos .container .card .content {
         height: 12rem;
+    }
+
+    .proyectos .title{
+        margin: 0;
+        margin-top: 5rem;
+    }
+
+    .proyectos .title h2{
+        font-size: 2.5rem;
     }
 }
 
@@ -633,8 +628,9 @@ h6 {
 
 .contacto .title h2 {
     font-family: var(--poppins);
-    font-size: var(--size-h1);
-    color: #Fff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #ed6071;
     text-align: center;
 }
 
@@ -647,11 +643,15 @@ h6 {
 }
 
 
+.contacto .container .descripcion {
+    padding: 2%;
+}
+
 .contacto .container .descripcion p {
-    font-family: var(--Azaret-mono);
-    font-weight: 400;
-    text-align: center;
-    color: #FDF0F0;
+    font-family: var(--poppins);
+    font-weight: lighter;
+    /* text-align: center; */
+    color: #000;
 }
 
 .contacto .container .interacciones {
@@ -668,7 +668,8 @@ h6 {
     display: flex;
     gap: .5rem;
     align-items: center;
-    color: #FDF0F0;
+    font-family: var(--poppins);
+    color: #000;
     justify-content: center;
 }
 
@@ -689,6 +690,7 @@ h6 {
     color: #000;
     font-size: 1.2rem;
     color: #FDF0F0;
+    font-family: var(--poppins);
 }
 
 @media(width >=768px) {
@@ -725,6 +727,25 @@ h6 {
 
     .contacto .container .descripcion {
         width: 40rem;
+    }
+}
+
+@media(width >=1440px) {
+
+    .contacto .title h2 {
+        font-size: 2.8rem;
+    }
+
+    .contacto .container .descripcion p {
+        font-size: 1.2rem;
+    }
+
+    .contacto .container .interacciones .redes {
+        color: #000;
+    }
+
+    .contacto .container .interacciones .cv a {
+        color: #000;
     }
 }
 
