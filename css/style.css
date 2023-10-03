@@ -520,8 +520,7 @@ h6 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(to bottom, #FDF0F0 30%, #F1B4BB 70%);
-    ;
+    background: linear-gradient(to bottom, #fff, #1F4172 100%);
     /* background-color: #fff; */
 }
 
@@ -557,6 +556,7 @@ h6 {
 }
 
 .proyectos .container .card .img img {
+    border-radius: 5px 5px 0 0;
     object-fit: cover;
     height: 15rem;
     width: 100%;
@@ -572,7 +572,6 @@ h6 {
     justify-content: space-around;
     gap: 1rem;
     background-color: #FDF0F0;
-    box-shadow: 0px 5px 10px #F1B4BB;
     border-radius: 0px 0px 5px 5px;
 }
 
@@ -639,7 +638,7 @@ h6 {
 .contacto {
     width: 100%;
     min-height: 50%;
-    background-color: #F1B4BB;
+    background-color: #1F4172;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -650,7 +649,7 @@ h6 {
     font-family: var(--poppins);
     font-size: 1.8rem;
     text-transform: uppercase;
-    color: #ed6071;
+    color: #F1B4BB;
     text-align: center;
 }
 
@@ -671,7 +670,7 @@ h6 {
     font-family: var(--poppins);
     font-weight: lighter;
     /* text-align: center; */
-    color: #000;
+    color: #f0f0f0;
 }
 
 .contacto .container .interacciones {
@@ -689,7 +688,7 @@ h6 {
     gap: .5rem;
     align-items: center;
     font-family: var(--poppins);
-    color: #000;
+    color: #f0f0f0;
     justify-content: center;
 }
 
@@ -707,9 +706,8 @@ h6 {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #000;
+    color: #f0f0f0;
     font-size: 1.2rem;
-    color: #FDF0F0;
     font-family: var(--poppins);
 }
 
@@ -758,14 +756,6 @@ h6 {
 
     .contacto .container .descripcion p {
         font-size: 1.2rem;
-    }
-
-    .contacto .container .interacciones .redes {
-        color: #000;
-    }
-
-    .contacto .container .interacciones .cv a {
-        color: #000;
     }
 }
 
