@@ -83,6 +83,7 @@ h6 {
 .banner {
     background-color: #132043;
     height: 100%;
+    justify-content: center;
 }
 
 .banner .header {
@@ -106,6 +107,7 @@ h6 {
     margin-top: 1.2rem;
     margin-left: 5%;
     transform: translate(-20%, -20%);
+    z-index: 100;
 }
 
 .banner .header .btn>div {
@@ -157,17 +159,15 @@ h6 {
 
 .banner .header nav {
     position: absolute;
-    height: 45vh;
-    width: 13rem;
+    height: 100%;
+    width: 100%;
     background-color: #1F4172;
     z-index: 1;
-    top: 5rem;
     border-radius: 0px 8px 8px 0px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     justify-content: space-evenly;
-    align-items: center;
     box-shadow: 2px 7px 15px #132043;
     transform: translateX(-1000px);
     transition: transform .6s ease-in-out, right .6s ease-in-out;
@@ -215,9 +215,6 @@ h6 {
     display: flex;
 }
 
-.banner {
-    justify-content: center;
-}
 
 .banner .nombre {
     color: #F1B4BB;
@@ -319,7 +316,7 @@ h6 {
     }
 }
 
-@media(width >=1024px) {
+@media(width >=768px) {
     .banner .header nav {
         transform: translateX(0);
         position: static;
@@ -560,7 +557,6 @@ h6 {
 
     height: 15rem;
     display: flex;
-    align-items: center;
     padding: 4%;
     flex-direction: column;
     justify-content: space-around;
@@ -696,13 +692,22 @@ h6 {
     justify-content: center;
 }
 
-.contacto .container .interacciones .redes {
+.contacto .container .interacciones .redes{
     display: flex;
     align-items: center;
     justify-content: center;
     color: #FDF0F0;
     cursor: pointer;
 }
+
+.contacto .container .interacciones .redes a{
+    color: #FDF0F0;
+    cursor: pointer;
+    all: unset;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
 
 .contacto .container .interacciones .cv a {
     display: flex;
