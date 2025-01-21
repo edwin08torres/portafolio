@@ -535,7 +535,6 @@ h6 {
     view-timeline-axis: block;
 
     animation-timeline: --card;
-    /*esto da la animacion*/
     animation-name: show;
 
     animation-range: entry 25% cover 50%;
@@ -554,7 +553,6 @@ h6 {
 }
 
 .proyectos .container .card .content {
-
     height: 15rem;
     display: flex;
     padding: 4%;
@@ -590,6 +588,39 @@ h6 {
     color: #000;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.proyectos .disclaimer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    text-align: center;
+    word-wrap: break-word;
+    gap: .7rem;
+    margin-bottom: 2rem;
+}
+
+.proyectos .disclaimer p{
+    color: #ccc;
+    font-family: var(--poppins);
+}
+
+.proyectos .disclaimer a{
+    border: 1px solid #ccc;
+    padding: 2%;
+    background: #F1B4BB;
+    text-decoration: none;
+    border-radius: 7px;
+    display: flex;
+
+}
+
+.proyectos .disclaimer a p{
+    color: #000;
+    font-size: var(--poppins);
+    font-weight: bold;
 }
 
 @keyframes show {
